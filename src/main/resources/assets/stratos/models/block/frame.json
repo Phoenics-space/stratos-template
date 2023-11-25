@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stratos:block/frame_down",
+    "up": "stratos:block/frame_up",
+    "north": "stratos:block/frame",
+    "east": "stratos:block/frame",
+    "south": "stratos:block/frame",
+    "west": "stratos:block/frame",
+    "particle": "stratos:block/frame"
+  }
+}
