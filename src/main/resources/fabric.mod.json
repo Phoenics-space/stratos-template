@@ -18,6 +18,9 @@
 		"main": [
 			"stratos.mod.Stratos"
 		],
+		"client": [
+			"stratos.mod.StratosClient"
+		],
 		"fabric-datagen": [
 			"stratos.mod.StratosDataGenerator"
 		]
