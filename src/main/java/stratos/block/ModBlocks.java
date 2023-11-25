@@ -20,12 +20,12 @@ public class ModBlocks{
         public static final Block STRATOS_STONE = registerBlock("stratos_stone",
                 new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
-    public static final Block FRAME_FILLED = registerBlock("frame",
+    public static final Block FRAME_FILLED = registerBlock("frame_filled",
             new Block(FabricBlockSettings.copyOf(Blocks.REINFORCED_DEEPSLATE)));
 
 
-    public static final Block FRAME_PORTAL = registerBlock("frame",
-            new Block(FabricBlockSettings.copyOf(Blocks.REINFORCED_DEEPSLATE)));
+    public static final Block FRAME_PORTAL = registerBlock("frame_portal",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_PORTAL_FRAME)));
 
         public static final Block RUBY_ORE = registerBlock("ruby_ore",
                 new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f), UniformIntProvider.create(2, 5)));

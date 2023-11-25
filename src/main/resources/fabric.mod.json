@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"stratos.mod.Stratos"
+			"stratos.mod.ExampleMod"
 		],
 		"fabric-datagen": [
 			"stratos.mod.StratosDataGenerator"

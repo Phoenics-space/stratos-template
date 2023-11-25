@@ -1,6 +1,8 @@
 {
   "block.stratos.cobbled_stratos_stone": "cobbled stratostone",
   "block.stratos.frame": "stratos frame",
+  "block.stratos.frame_portal": "stratos portal frame",
+  "block.stratos.frame_filled": "stratos frame filled",
   "block.stratos.ruby_block": "Ruby block",
   "block.stratos.ruby_ore": "Ruby ore",
   "block.stratos.stratos_stone": "Stratos stone",

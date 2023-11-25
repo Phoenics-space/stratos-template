@@ -8,74 +8,37 @@
   },
   "elements": [
     {
-      "from": [
-        0,
-        0,
-        0
-      ],
-      "to": [
-        16,
-        13,
-        16
-      ],
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 13, 16 ],
       "faces": {
         "down": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#bottom",
+          "uv": [ 0, 0, 16, 16 ],
+          "texture": "stratos:block/frame_down",
           "cullface": "down"
         },
         "up": {
-          "uv": [
-            0,
-            0,
-            16,
-            16
-          ],
-          "texture": "#top"
+          "uv": [ 0, 0, 16, 16 ],
+          "texture": "stratos:block/frame_up",
+          "cullface": "up"
         },
         "north": {
-          "uv": [
-            0,
-            3,
-            16,
-            16
-          ],
-          "texture": "#side",
+          "uv": [ 0, 3, 16, 16 ],
+          "texture": "stratos:block/frame",
           "cullface": "north"
         },
         "south": {
-          "uv": [
-            0,
-            3,
-            16,
-            16
-          ],
-          "texture": "#side",
+          "uv": [ 0, 3, 16, 16 ],
+          "texture": "stratos:block/frame",
           "cullface": "south"
         },
         "west": {
-          "uv": [
-            0,
-            3,
-            16,
-            16
-          ],
-          "texture": "#side",
+          "uv": [ 0, 3, 16, 16 ],
+          "texture": "stratos:block/frame",
           "cullface": "west"
         },
         "east": {
-          "uv": [
-            0,
-            3,
-            16,
-            16
-          ],
-          "texture": "#side",
+          "uv": [ 0, 3, 16, 16 ],
+          "texture": "stratos:block/frame",
           "cullface": "east"
         }
       }
