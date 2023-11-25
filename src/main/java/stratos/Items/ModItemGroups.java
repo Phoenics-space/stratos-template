@@ -8,36 +8,21 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import stratos.block.ModBlocks;
-import stratos.mod.ExampleMod;
+import stratos.mod.Stratos;
+
+import static stratos.mod.Stratos.identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(ExampleMod.MOD_ID, "ruby"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.RUBY);
-
-                        entries.add(ModBlocks.RUBY_BLOCK);
-
-                        entries.add(ModBlocks.RUBY_ORE);
-
-                        entries.add(ModBlocks.STRATOS_STONE);
-
-                        entries.add(ModBlocks.COBBLED_STRATOS_STONE);
-
-                        entries.add(ModBlocks.FRAME);
-
-                        entries.add(ModBlocks.FRAME_FILLED);
-
-                        entries.add(ModBlocks.FRAME_PORTAL);
-
-
-
-                    }).build());
+    public static final ItemGroup RUBY_GROUP = FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
+        .icon(() -> new ItemStack(ModItems.RUBY))
+        .entries((displayContext, entries) -> ModItems.ITEMS.forEach(entries::add))
+        .build();
 
 
     public static void registerItemGroups() {
-        ExampleMod.LOGGER.info("Registering Item Groups for " + ExampleMod.MOD_ID);
+        Stratos.LOGGER.info("Registering Item Groups for " + Stratos.MOD_ID);
+
+        Registry.register(Registries.ITEM_GROUP, identifier("ruby"), RUBY_GROUP);
     }
 }
 
