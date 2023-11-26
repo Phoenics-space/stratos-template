@@ -7,5 +7,12 @@
   "block.stratos.ruby_ore": "Ruby ore",
   "block.stratos.stratos_stone": "Stratos stone",
   "item.stratos.ruby": "Ruby",
-  "itemgroup.ruby": "Ruby Stratos Group"
+  "block.stratos.air_mahoe_log": "Airmahoe Log",
+  "block.stratos.air_mahoe_wood": "Airmahoe Wood",
+  "block.stratos.stripped_air_mahoe_log": "Stripped Airmahoe Log",
+  "block.stratos.stripped_air_mahoe_wood": "Stripped Airmahoe Wood",
+  "block.stratos.air_mahoe_planks": "Airmahoe Planks",
+  "block.stratos.air_mahoe_leaves": "Airmahoe Leaves",
+  "itemgroup.ruby": "Ruby Stratos Group",
+
 }

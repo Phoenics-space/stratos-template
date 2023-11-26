@@ -1,7 +1,7 @@
-// 1.20.2	2023-11-26T12:19:20.4330635	Stratos/Model Definitions
+// 1.20.2	2023-11-26T12:43:15.1562721	Stratos/Model Definitions
 a14ba482297abc0edd1f52892a5a866088344b9b assets\stratos\models\block\ruby_block.json
-62440947412547ae6132c417e5a1ef375fde4ca4 assets\stratos\blockstates\stratos_stone.json
 5eb0e48d0f8d8fd2364ec72982de881d4ecd7a3e assets\stratos\models\item\stratos_stone.json
+62440947412547ae6132c417e5a1ef375fde4ca4 assets\stratos\blockstates\stratos_stone.json
 f141825444a41262a0c8472bb8dcbbc1aa3cc749 assets\stratos\models\block\stripped_air_mahoe_log_horizontal.json
 d0e2fb95f1498c951eea0421582ae16ef0b9fcfb assets\stratos\models\item\air_mahoe_planks.json
 9494c9e35c895b77389fe4a4c35fc4fdc285541b assets\stratos\models\item\stripped_air_mahoe_wood.json
