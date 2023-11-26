@@ -1,0 +1,4 @@
+// 1.20.2	2023-11-26T12:19:20.4290657	Stratos/Tags for minecraft:block
+eabac887510d1a917a4884a7caa86aab9fbf166c data\minecraft\tags\blocks\logs_that_burn.json
+e3223669cc88c04b0336d820007caa6bdb2aa796 data\minecraft\tags\blocks\mineable\pickaxe.json
+ece305833b98d414ff9820a024dc158172f93241 data\minecraft\tags\blocks\needs_iron_tool.json
