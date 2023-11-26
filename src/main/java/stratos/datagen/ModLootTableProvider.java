@@ -26,7 +26,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.RUBY_BLOCK);
-
+        addDrop(ModBlocks.COBBLED_STRATOS_STONE);
+        addDrop(ModBlocks.STRATOS_STONE);
         addDrop(ModBlocks.RUBY_ORE);
 
 

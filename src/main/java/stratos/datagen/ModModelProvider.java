@@ -20,7 +20,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRATOS_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBBLED_STRATOS_STONE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.AIR_MAHOE_LOG).log(ModBlocks.AIR_MAHOE_LOG).wood(ModBlocks.AIR_MAHOE_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AIR_MAHOE_LOG).log(ModBlocks.STRIPPED_AIR_MAHOE_LOG).wood(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
