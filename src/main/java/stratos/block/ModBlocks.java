@@ -79,10 +79,10 @@ public class ModBlocks{
 
 
     public static final Block AIR_MAHOE_DOOR = registerBlock("air_mahoe_door",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK));
 
     public static final Block AIR_MAHOE_TRAPDOOR = registerBlock("air_mahoe_trapdoor",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()));
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK));
 
 
 

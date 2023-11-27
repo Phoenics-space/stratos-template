@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import stratos.Items.ModItems;
 import stratos.block.ModBlocks;
@@ -27,6 +28,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS,
                 ModBlocks.RUBY_BLOCK);
+
+        createTrapdoorRecipe(ModBlocks.AIR_MAHOE_PLANKS, Ingredient.ofItems(ModBlocks.AIR_MAHOE_PLANKS));
+
+        createFenceRecipe(ModBlocks.AIR_MAHOE_PLANKS,Ingredient.ofItems(ModBlocks.AIR_MAHOE_PLANKS));
+
+        createFenceGateRecipe(ModBlocks.AIR_MAHOE_PLANKS,Ingredient.ofItems(ModBlocks.AIR_MAHOE_PLANKS));
+
+        createDoorRecipe(ModBlocks.AIR_MAHOE_PLANKS, Ingredient.ofItems(ModBlocks.AIR_MAHOE_PLANKS))
+
 
         ;
     }
