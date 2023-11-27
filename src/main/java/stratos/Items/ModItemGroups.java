@@ -31,6 +31,18 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.FRAME_PORTAL);
 
+                        entries.add(ModBlocks.AIR_MAHOE_LICHEN);
+
+                        entries.add(ModBlocks.AIR_MAHOE_LOG);
+
+                        entries.add(ModBlocks.AIR_MAHOE_PLANKS);
+
+                        entries.add(ModBlocks.AIR_MAHOE_WOOD);
+
+                        entries.add(ModBlocks.STRIPPED_AIR_MAHOE_LOG);
+
+                        entries.add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
+
 
 
                     }).build());

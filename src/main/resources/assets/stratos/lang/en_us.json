@@ -13,6 +13,17 @@
   "block.stratos.stripped_air_mahoe_wood": "Stripped Airmahoe Wood",
   "block.stratos.air_mahoe_planks": "Airmahoe Planks",
   "block.stratos.air_mahoe_leaves": "Airmahoe Leaves",
-  "itemgroup.ruby": "Ruby Stratos Group",
+
+  "block.stratos.air_mahoe_stairs": "Airmahoe Stairs",
+  "block.stratos.air_mahoe_slab": "Airmahoe Slab",
+  "block.stratos.air_mahoe_button": "Airmahoe Button",
+  "block.stratos.air_mahoe_pressure_plate": "Airmahoe Pressure Plate",
+  "block.stratos.air_mahoe_fence": "Airmahoe Fence",
+  "block.stratos.air_mahoe_fence_gate": "Airmahoe Fence Gate",
+  "block.stratos.stratos_stone_wall": "Stratostone Wall",
+  "block.stratos.air_mahoe_door": "Airmahoe door",
+  "block.stratos.air_mahoe_trapdoor": "Airmahoe trapdoor",
+
+  "itemgroup.ruby": "Ruby Stratos Group"
 
 }

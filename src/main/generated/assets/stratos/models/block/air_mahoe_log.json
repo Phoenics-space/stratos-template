@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "stratos:block/air_mahoe_log_top",
-    "side": "stratos:block/air_mahoe_log_side"
+    "side": "stratos:block/air_mahoe_log"
   }
 }

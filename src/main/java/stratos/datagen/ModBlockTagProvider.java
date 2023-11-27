@@ -35,6 +35,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AIR_MAHOE_WOOD)
                 .add(ModBlocks.STRIPPED_AIR_MAHOE_LOG)
                 .add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.AIR_MAHOE_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.AIR_MAHOE_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.STRATOS_STONE_WALL);
     }
 }
 

@@ -27,8 +27,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.COBBLED_STRATOS_STONE);
-        addDrop(ModBlocks.STRATOS_STONE);
-        addDrop(ModBlocks.RUBY_ORE);
+        addDrop(ModBlocks.STRATOS_STONE, drops(ModBlocks.COBBLED_STRATOS_STONE));
+        addDrop(ModBlocks.RUBY_ORE, drops(ModItems.RUBY));
 
 
 
@@ -38,6 +38,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_AIR_MAHOE_LOG);
         addDrop(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
         addDrop(ModBlocks.AIR_MAHOE_PLANKS);
+
+        addDrop(ModBlocks.AIR_MAHOE_STAIRS);
+        addDrop(ModBlocks.AIR_MAHOE_TRAPDOOR);
+        addDrop(ModBlocks.STRATOS_STONE_WALL);
+        addDrop(ModBlocks.AIR_MAHOE_FENCE);
+        addDrop(ModBlocks.AIR_MAHOE_FENCE_GATE);
+        addDrop(ModBlocks.AIR_MAHOE_BUTTON);
+        addDrop(ModBlocks.AIR_MAHOE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.AIR_MAHOE_DOOR, doorDrops(ModBlocks.AIR_MAHOE_DOOR));
+        addDrop(ModBlocks.AIR_MAHOE_SLAB, slabDrops(ModBlocks.AIR_MAHOE_SLAB));
 
         addDrop(ModBlocks.AIR_MAHOE_LICHEN, leavesDrops(ModBlocks.AIR_MAHOE_LICHEN, ModBlocks.AIR_MAHOE_LICHEN, 0.0025f)); // TODO
     }

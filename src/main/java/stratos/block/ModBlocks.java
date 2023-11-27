@@ -2,10 +2,7 @@ package stratos.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -50,6 +47,42 @@ public class ModBlocks{
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block AIR_MAHOE_LICHEN = registerBlock("air_mahoe_lichen",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+
+
+
+    public static final Block AIR_MAHOE_STAIRS = registerBlock("air_mahoe_stairs",
+            new StairsBlock(ModBlocks.AIR_MAHOE_PLANKS.getDefaultState(),FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+
+    public static final Block AIR_MAHOE_SLAB = registerBlock("air_mahoe_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
+
+
+
+    public static final Block AIR_MAHOE_PRESSURE_PLATE = registerBlock("air_mahoe_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK));
+
+    public static final Block AIR_MAHOE_BUTTON = registerBlock("air_mahoe_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
+
+
+
+    public static final Block AIR_MAHOE_FENCE = registerBlock("air_mahoe_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+
+    public static final Block AIR_MAHOE_FENCE_GATE = registerBlock("air_mahoe_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE), WoodType.OAK));
+
+    public static final Block STRATOS_STONE_WALL = registerBlock("stratos_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.STRATOS_STONE)));
+
+
+
+    public static final Block AIR_MAHOE_DOOR = registerBlock("air_mahoe_lichen",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
+
+    public static final Block AIR_MAHOE_TRAPDOOR = registerBlock("air_mahoe_trapdoor",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()));
 
 
 

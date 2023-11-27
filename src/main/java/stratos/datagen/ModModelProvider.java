@@ -25,6 +25,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AIR_MAHOE_LOG).log(ModBlocks.STRIPPED_AIR_MAHOE_LOG).wood(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_LICHEN);
+
+        rubyPool.stairs(ModBlocks.AIR_MAHOE_STAIRS);
+        rubyPool.slab(ModBlocks.AIR_MAHOE_SLAB);
+        rubyPool.button(ModBlocks.AIR_MAHOE_BUTTON);
+        rubyPool.pressurePlate(ModBlocks.AIR_MAHOE_PRESSURE_PLATE);
+        rubyPool.fence(ModBlocks.AIR_MAHOE_FENCE);
+        rubyPool.fenceGate(ModBlocks.AIR_MAHOE_FENCE_GATE);
+        rubyPool.wall(ModBlocks.STRATOS_STONE_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.AIR_MAHOE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.AIR_MAHOE_TRAPDOOR);
+
     }
 
     @Override
