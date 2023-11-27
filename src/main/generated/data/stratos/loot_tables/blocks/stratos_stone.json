@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "stratos:stratos_stone"
+          "name": "stratos:cobbled_stratos_stone"
         }
       ],
       "rolls": 1.0

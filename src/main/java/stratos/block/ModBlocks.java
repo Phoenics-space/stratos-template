@@ -78,7 +78,7 @@ public class ModBlocks{
 
 
 
-    public static final Block AIR_MAHOE_DOOR = registerBlock("air_mahoe_lichen",
+    public static final Block AIR_MAHOE_DOOR = registerBlock("air_mahoe_door",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
 
     public static final Block AIR_MAHOE_TRAPDOOR = registerBlock("air_mahoe_trapdoor",

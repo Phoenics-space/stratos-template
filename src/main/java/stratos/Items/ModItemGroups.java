@@ -43,6 +43,22 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
 
+                        entries.add(ModBlocks.AIR_MAHOE_BUTTON);
+
+                        entries.add(ModBlocks.AIR_MAHOE_DOOR);
+
+                        entries.add(ModBlocks.AIR_MAHOE_TRAPDOOR);
+
+                        entries.add(ModBlocks.AIR_MAHOE_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.AIR_MAHOE_FENCE);
+
+                        entries.add(ModBlocks.AIR_MAHOE_FENCE_GATE);
+
+                        entries.add(ModBlocks.AIR_MAHOE_SLAB);
+
+                        entries.add(ModBlocks.AIR_MAHOE_STAIRS);
+
 
 
                     }).build());
