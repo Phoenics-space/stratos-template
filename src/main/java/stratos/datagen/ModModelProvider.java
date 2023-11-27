@@ -26,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_LICHEN);
 
+        blockStateModelGenerator.registerTopSoil(ModBlocks.LICHEN_GROWTH);
+
         rubyPool.stairs(ModBlocks.AIR_MAHOE_STAIRS);
         rubyPool.slab(ModBlocks.AIR_MAHOE_SLAB);
         rubyPool.button(ModBlocks.AIR_MAHOE_BUTTON);

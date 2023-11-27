@@ -59,6 +59,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.AIR_MAHOE_STAIRS);
 
+                        entries.add(ModBlocks.STRATOS_STONE_WALL);
+
+                        entries.add(ModBlocks.LICHEN_GROWTH);
+
 
 
                     }).build());

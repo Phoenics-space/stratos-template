@@ -7,8 +7,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.random.Random;
 import stratos.mod.ExampleMod;
 
 public class ModBlocks{
@@ -83,6 +86,11 @@ public class ModBlocks{
 
     public static final Block AIR_MAHOE_TRAPDOOR = registerBlock("air_mahoe_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block LICHEN_GROWTH = registerBlock("lichen_growth",
+            new NyliumBlock(FabricBlockSettings.copyOf(Blocks.WARPED_NYLIUM)));
+
+
 
 
 

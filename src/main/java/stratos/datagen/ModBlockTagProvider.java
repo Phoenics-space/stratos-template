@@ -42,6 +42,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AIR_MAHOE_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.STRATOS_STONE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(ModBlocks.LICHEN_GROWTH);
     }
 }
 
