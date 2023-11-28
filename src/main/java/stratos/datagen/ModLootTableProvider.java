@@ -52,6 +52,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.LICHEN_GROWTH, drops(ModBlocks.COBBLED_STRATOS_STONE));
 
+        addDrop(ModBlocks.LICHEN_GRASS);
+
         addDrop(ModBlocks.AIR_MAHOE_LICHEN, leavesDrops(ModBlocks.AIR_MAHOE_LICHEN, ModBlocks.AIR_MAHOE_LICHEN, 0.0025f)); // TODO
     }
 

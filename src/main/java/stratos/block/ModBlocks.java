@@ -90,6 +90,10 @@ public class ModBlocks{
     public static final Block LICHEN_GROWTH = registerBlock("lichen_growth",
             new NyliumBlock(FabricBlockSettings.copyOf(Blocks.WARPED_NYLIUM)));
 
+    public static final Block LICHEN_GRASS = registerBlock("lichen_grass",
+            new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS)) {
+            });
+public static final Block LICHEN_POT = registerBlock("lichen_pot", new Block(FabricBlockSettings.copyOf(Blocks.GRASS)));
 
 
 

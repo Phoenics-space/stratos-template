@@ -3,8 +3,10 @@ package stratos.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.BlockStateVariant;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
 import stratos.Items.ModItems;
 import stratos.block.ModBlocks;
 
@@ -26,7 +28,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_MAHOE_LICHEN);
 
-        blockStateModelGenerator.registerTopSoil(ModBlocks.LICHEN_GROWTH);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LICHEN_GROWTH);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LICHEN_GRASS, ModBlocks.LICHEN_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         rubyPool.stairs(ModBlocks.AIR_MAHOE_STAIRS);
         rubyPool.slab(ModBlocks.AIR_MAHOE_SLAB);
@@ -35,6 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
         rubyPool.fence(ModBlocks.AIR_MAHOE_FENCE);
         rubyPool.fenceGate(ModBlocks.AIR_MAHOE_FENCE_GATE);
         rubyPool.wall(ModBlocks.STRATOS_STONE_WALL);
+
 
         blockStateModelGenerator.registerDoor(ModBlocks.AIR_MAHOE_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.AIR_MAHOE_TRAPDOOR);

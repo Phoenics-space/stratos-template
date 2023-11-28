@@ -63,6 +63,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.LICHEN_GROWTH);
 
+                        entries.add(ModBlocks.LICHEN_GRASS);
+
+                        entries.add(ModBlocks.LICHEN_POT);
+
 
 
                     }).build());

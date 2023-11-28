@@ -45,6 +45,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.LICHEN_GROWTH);
+
     }
 }
 
