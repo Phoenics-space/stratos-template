@@ -72,7 +72,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SHROOM_MYOZYT);
 
 
-
                     }).build());
 
 
