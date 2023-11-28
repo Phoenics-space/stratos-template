@@ -30,6 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LICHEN_GROWTH);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LICHEN_GRASS, ModBlocks.LICHEN_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.AIR_SHROOM, ModBlocks.SHROOM_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         rubyPool.stairs(ModBlocks.AIR_MAHOE_STAIRS);
         rubyPool.slab(ModBlocks.AIR_MAHOE_SLAB);

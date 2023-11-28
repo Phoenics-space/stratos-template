@@ -67,6 +67,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.LICHEN_POT);
 
+                        entries.add(ModBlocks.AIR_SHROOM);
+
 
 
                     }).build());

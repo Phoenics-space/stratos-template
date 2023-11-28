@@ -91,9 +91,14 @@ public class ModBlocks{
             new NyliumBlock(FabricBlockSettings.copyOf(Blocks.WARPED_NYLIUM)));
 
     public static final Block LICHEN_GRASS = registerBlock("lichen_grass",
-            new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS)) {
+            new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS).nonOpaque()) {
+            });
+
+    public static final Block AIR_SHROOM = registerBlock("air_shroom",
+            new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS).nonOpaque()) {
             });
 public static final Block LICHEN_POT = registerBlock("lichen_pot", new Block(FabricBlockSettings.copyOf(Blocks.GRASS)));
+    public static final Block SHROOM_POT = registerBlock("shroom_pot", new Block(FabricBlockSettings.copyOf(Blocks.GRASS)));
 
 
 
