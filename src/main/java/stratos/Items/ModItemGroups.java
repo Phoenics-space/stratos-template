@@ -65,9 +65,11 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.LICHEN_GRASS);
 
-                        entries.add(ModBlocks.LICHEN_POT);
-
                         entries.add(ModBlocks.AIR_SHROOM);
+
+                        entries.add(ModBlocks.AIR_KELP);
+
+                        entries.add(ModBlocks.SHROOM_MYOZYT);
 
 
 

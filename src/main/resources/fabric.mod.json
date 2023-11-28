@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"stratos.mod.StratosDataGenerator"
+		],
+		"client": [
+			"stratos.mod.ExampleModClient"
 		]
 	},
 	"mixins": [

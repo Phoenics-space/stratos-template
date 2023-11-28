@@ -2,6 +2,7 @@ package stratos.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.BlockStateVariant;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -31,6 +32,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LICHEN_GROWTH);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LICHEN_GRASS, ModBlocks.LICHEN_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.AIR_SHROOM, ModBlocks.SHROOM_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.AIR_KELP, ModBlocks.AIR_KELP_POT, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerWallPlant(ModBlocks.SHROOM_MYOZYT);
 
         rubyPool.stairs(ModBlocks.AIR_MAHOE_STAIRS);
         rubyPool.slab(ModBlocks.AIR_MAHOE_SLAB);
