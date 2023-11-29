@@ -1,12 +1,13 @@
 {
-  "block.stratos.cobbled_stratos_stone": "cobbled stratostone",
-  "block.stratos.frame": "stratos frame",
-  "block.stratos.frame_portal": "stratos portal frame",
-  "block.stratos.frame_filled": "stratos frame filled",
-  "block.stratos.ruby_block": "Ruby block",
-  "block.stratos.ruby_ore": "Ruby ore",
-  "block.stratos.stratos_stone": "Stratos stone",
   "item.stratos.ruby": "Ruby",
+
+  "block.stratos.cobbled_stratos_stone": "Cobbled Stratostone",
+  "block.stratos.frame": "stratos Frame",
+  "block.stratos.frame_portal": "Stratos Portal Frame",
+  "block.stratos.frame_filled": "Stratos Frame Filled",
+  "block.stratos.ruby_block": "Ruby Block",
+  "block.stratos.ruby_ore": "Ruby Ore",
+  "block.stratos.stratos_stone": "Stratos Stone",
   "block.stratos.air_mahoe_log": "Airmahoe Log",
   "block.stratos.air_mahoe_wood": "Airmahoe Wood",
   "block.stratos.stripped_air_mahoe_log": "Stripped Airmahoe Log",
@@ -21,10 +22,10 @@
   "block.stratos.air_mahoe_fence": "Airmahoe Fence",
   "block.stratos.air_mahoe_fence_gate": "Airmahoe Fence Gate",
   "block.stratos.stratos_stone_wall": "Stratostone Wall",
-  "block.stratos.air_mahoe_door": "Airmahoe door",
-  "block.stratos.air_mahoe_trapdoor": "Airmahoe trapdoor",
+  "block.stratos.air_mahoe_door": "Airmahoe Door",
+  "block.stratos.air_mahoe_trapdoor": "Airmahoe Trapdoor",
 
-  "block.stratos.lichen_growth": "Airlichen growth",
+  "block.stratos.lichen_growth": "Airlichen Growth",
 
   "itemgroup.ruby": "Ruby Stratos Group"
 
