@@ -4,14 +4,12 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.util.math.random.Random;
+import stratos.block.custom.AirShroomBlock;
 import stratos.mod.ExampleMod;
 
 public class ModBlocks{
@@ -95,8 +93,8 @@ public class ModBlocks{
             });
 
     public static final Block AIR_SHROOM = registerBlock("air_shroom",
-            new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS).nonOpaque()) {
-            });
+            new AirShroomBlock(FabricBlockSettings.copyOf(Blocks.CRIMSON_ROOTS).mapColor(MapColor.RED)
+                    .sounds(BlockSoundGroup.ROOTS)));
 public static final Block LICHEN_POT = registerBlock("lichen_pot",
         new Block(FabricBlockSettings.copyOf(Blocks.GRASS)));
     public static final Block SHROOM_POT = registerBlock("shroom_pot",
@@ -115,15 +113,18 @@ public static final Block LICHEN_POT = registerBlock("lichen_pot",
 
 
 
-        private static Block registerBlock(String name, Block block) {
-            registerBlockItem(name, block);
-            return Registry.register(Registries.BLOCK, new Identifier(ExampleMod.MOD_ID, name), block);
-        }
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(ExampleMod.MOD_ID, name), block);
+    }
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(ExampleMod.MOD_ID, name), block);
+    }
 
-        private static Item registerBlockItem(String name, Block block) {
-            return Registry.register(Registries.ITEM, new Identifier(ExampleMod.MOD_ID, name),
-                    new BlockItem(block, new FabricItemSettings()));
-        }
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(ExampleMod.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+    }
 
         public static void registerModBlocks() {
             ExampleMod.LOGGER.info("Registering ModBlocks for " + ExampleMod.MOD_ID);
