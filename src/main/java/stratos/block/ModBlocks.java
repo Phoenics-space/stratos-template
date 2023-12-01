@@ -47,7 +47,7 @@ public class ModBlocks{
     public static final Block AIR_MAHOE_PLANKS = registerBlock("air_mahoe_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block AIR_MAHOE_LICHEN = registerBlock("air_mahoe_lichen",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+            new AirShroomBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
 
 
 

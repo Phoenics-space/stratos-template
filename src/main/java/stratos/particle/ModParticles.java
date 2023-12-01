@@ -13,6 +13,8 @@ public class ModParticles {
 
     public static final DefaultParticleType AIR_SHROOM_PARTICLE = registerParticle("air_shroom_particle", FabricParticleTypes.simple());
 
+    public static final DefaultParticleType AIR_LICHEN_DROP = registerParticle("air_lichen_drop.json", FabricParticleTypes.simple());
+
 
 
     private static DefaultParticleType registerParticle(String name, DefaultParticleType particleType) {

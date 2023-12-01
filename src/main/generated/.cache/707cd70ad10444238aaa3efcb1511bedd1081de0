@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-28T21:03:17.9083066	Stratos/Block Loot Tables
+// 1.20.2	2023-11-30T10:08:08.6786381	Stratos/Block Loot Tables
 4d4272b5c787d960e9252bb1eaad3bc9dcf010ea data\stratos\loot_tables\blocks\lichen_growth.json
 f9a76a7a8977d02ca3c6ef90bc2826f7d35cdb1c data\stratos\loot_tables\blocks\stripped_air_mahoe_log.json
 b066611e6760d99390f11f2bc2fbf2691a6fd912 data\stratos\loot_tables\blocks\ruby_block.json
@@ -16,7 +16,7 @@ cc21508dc0c234c07fd07515191f18fa518b1979 data\stratos\loot_tables\blocks\stratos
 7f95f67f237dc041c9199f3c70cd6bdfe0dc8ca9 data\stratos\loot_tables\blocks\lichen_grass.json
 62fe4d18d6494d201eb705cefbb8fdd9fc1437b0 data\stratos\loot_tables\blocks\air_mahoe_door.json
 d7ec5b2d7e6677ed39e835db3d7ff3c1efe00ae5 data\stratos\loot_tables\blocks\air_mahoe_planks.json
-c29b83558c6cc833925dcde666d7fb5ebdce5398 data\stratos\loot_tables\blocks\stripped_air_mahoe_wood.json
 79a8bec3a500aa973856fdb10693b895dd545bb5 data\stratos\loot_tables\blocks\air_mahoe_button.json
-a0dd0c335258f52e3ce58a046196304ea9f3e089 data\stratos\loot_tables\blocks\air_mahoe_log.json
+c29b83558c6cc833925dcde666d7fb5ebdce5398 data\stratos\loot_tables\blocks\stripped_air_mahoe_wood.json
 73ff496a5c53aa4e5532fd8618be5cad2abb4854 data\stratos\loot_tables\blocks\air_mahoe_fence.json
+a0dd0c335258f52e3ce58a046196304ea9f3e089 data\stratos\loot_tables\blocks\air_mahoe_log.json

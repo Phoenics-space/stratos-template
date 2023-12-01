@@ -1,4 +1,4 @@
-// 1.20.2	2023-11-28T21:03:17.9113058	Stratos/Model Definitions
+// 1.20.2	2023-11-30T10:08:08.6806424	Stratos/Model Definitions
 a14ba482297abc0edd1f52892a5a866088344b9b assets\stratos\models\block\ruby_block.json
 62a054e01792c48f1dfa2c86798b5ea02729d045 assets\stratos\models\block\air_mahoe_door_bottom_left.json
 407607d4cda13294a1f86ebd525d2c382c3d9dbd assets\stratos\models\block\air_kelp.json
@@ -24,8 +24,8 @@ b579b6d555d7c77a55b1e2d581006a5334e62167 assets\stratos\models\block\air_mahoe_l
 06c913af5034a42039b39513426028fd1708e0c1 assets\stratos\blockstates\stripped_air_mahoe_log.json
 aa2e2d2e2b3db3dd1fdf903066646315bdbff57e assets\stratos\models\block\air_mahoe_fence_side.json
 44619249b1f149ab2dcdea56b1219562e6f69188 assets\stratos\models\item\lichen_pot.json
-62440947412547ae6132c417e5a1ef375fde4ca4 assets\stratos\blockstates\stratos_stone.json
 901f84ccd7d4a64da06cb449c82fba354542cbcb assets\stratos\blockstates\air_mahoe_pressure_plate.json
+62440947412547ae6132c417e5a1ef375fde4ca4 assets\stratos\blockstates\stratos_stone.json
 5eb0e48d0f8d8fd2364ec72982de881d4ecd7a3e assets\stratos\models\item\stratos_stone.json
 f357ce0ce33cdad4fa09525585c91d68a4b30ab5 assets\stratos\models\block\air_mahoe_button_inventory.json
 9494c9e35c895b77389fe4a4c35fc4fdc285541b assets\stratos\models\item\stripped_air_mahoe_wood.json
@@ -78,11 +78,11 @@ c7ea8b3f816ffb0b27f8da25d2076dd06afde524 assets\stratos\blockstates\air_kelp_pot
 ad2dd81b17525e15f6fdd84070f49749bc5f3bd8 assets\stratos\models\block\stratos_stone_wall_side.json
 0f2565f198d98bd2ee6e7a46fb81a05f585990c9 assets\stratos\blockstates\air_mahoe_fence.json
 980aa09440fd91c1463833ee87c83cad79d5dd1e assets\stratos\models\item\lichen_growth.json
-09bf31c316cdb16a15e423689982a0175d3cac0e assets\stratos\models\block\air_mahoe_planks.json
 8ee094c11e143feb9cd69ae5c9c87e862d0e4807 assets\stratos\models\block\air_mahoe_door_top_right_open.json
+09bf31c316cdb16a15e423689982a0175d3cac0e assets\stratos\models\block\air_mahoe_planks.json
 961ff7d61884f40049d939f40196d8eaeeb57e45 assets\stratos\models\block\shroom_pot.json
-83594bec4704fb88d7919af971bfdbe1153d4956 assets\stratos\models\block\air_mahoe_door_bottom_left_open.json
 fc680edbdfccd03b5a8f2b5908875ddad7ccab28 assets\stratos\models\block\air_mahoe_fence_post.json
+83594bec4704fb88d7919af971bfdbe1153d4956 assets\stratos\models\block\air_mahoe_door_bottom_left_open.json
 5888c830251360a21526f3f1f772b9a874bd842a assets\stratos\models\item\air_mahoe_button.json
 70422167851eb208ac59270d5551f2061ac0ddeb assets\stratos\blockstates\air_mahoe_log.json
 6df344c57998dae6c5a2559069f6652859d6d85b assets\stratos\models\block\cobbled_stratos_stone.json

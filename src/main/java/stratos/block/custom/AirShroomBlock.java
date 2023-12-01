@@ -58,5 +58,7 @@ public class AirShroomBlock extends PlantBlock {
         }
 
         world.addParticle(ModParticles.AIR_SHROOM_PARTICLE, d, e, f, 0.0, 0.0, 0.0);
+
+        world.addParticle(ModParticles.AIR_LICHEN_DROP, d, e, f, 0.0, 0.0, 0.0);
     }
 }

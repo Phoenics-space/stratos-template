@@ -20,7 +20,7 @@ public class AirShroomParticle extends SpriteBillboardParticle {
         this.velocityY = yd;
         this.velocityZ = zd;
 
-        this.scale *= 0.6f;
+        this.scale *= 0.9f;
         this.maxAge = 60; // Adjust maxAge as needed for particle lifespan
         this.setSpriteForAge(spriteSet);
 
