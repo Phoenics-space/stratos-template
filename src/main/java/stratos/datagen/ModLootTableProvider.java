@@ -26,7 +26,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.COBBLED_STRATOS_STONE);
         addDrop(ModBlocks.STRATOS_STONE, drops(ModBlocks.COBBLED_STRATOS_STONE));
-        addDrop(ModBlocks.RUBY_ORE, drops(ModItems.RUBY));
+
+        addDrop(ModBlocks.RUBY_ORE, oreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY));
 
 
 
