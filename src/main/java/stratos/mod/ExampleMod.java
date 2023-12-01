@@ -7,6 +7,7 @@ import stratos.Items.ModItemGroups;
 import stratos.Items.ModItems;
 import stratos.block.ModBlocks;
 import stratos.particle.ModParticles;
+import stratos.world.dimension.portal.StratosPortals;
 
 public class ExampleMod implements ModInitializer {
 
@@ -20,5 +21,7 @@ public class ExampleMod implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         ModParticles.registerParticles();
+
+        StratosPortals.registerStratosPortals();
         }
     }

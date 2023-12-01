@@ -1,4 +1,4 @@
-package stratos.world;
+package stratos.world.dimension;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -18,9 +18,9 @@ public class ModDimensions {
     public static final RegistryKey<DimensionOptions> STRATOSDIM_KEY = RegistryKey.of(RegistryKeys.DIMENSION,
             new Identifier(ExampleMod.MOD_ID, "stratosdim"));
     public static final RegistryKey<World> STRATOSDIM_LEVEL_KEY = RegistryKey.of(RegistryKeys.WORLD,
-            new Identifier(ExampleMod.MOD_ID, "kaupendim"));
+            new Identifier(ExampleMod.MOD_ID, "stratosdim"));
     public static final RegistryKey<DimensionType> STRATOS_DIM_TYPE = RegistryKey.of(RegistryKeys.DIMENSION_TYPE,
-            new Identifier(ExampleMod.MOD_ID, "kaupendim_type"));
+            new Identifier(ExampleMod.MOD_ID, "stratosdim_type"));
 
     public static void bootstrapType(Registerable<DimensionType> context) {
         context.register(STRATOS_DIM_TYPE, new DimensionType(
@@ -38,6 +38,6 @@ public class ModDimensions {
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 DimensionTypes.OVERWORLD_ID, // effectsLocation
                 1.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, UniformIntProvider.create(0, 0), 0)));
+                new DimensionType.MonsterSettings(false /* Piglin Safe */, false/* Has Raids */, UniformIntProvider.create(0, 0), 0)));
     }
 }
