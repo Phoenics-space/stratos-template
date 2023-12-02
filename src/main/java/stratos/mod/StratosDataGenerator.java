@@ -19,11 +19,11 @@ public class StratosDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 
+	}
+
 		@Override
 		public void buildRegistry(RegistryBuilder registryBuilder) {
 
 			registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
-		}
-
 	}
 }

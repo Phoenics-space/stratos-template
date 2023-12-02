@@ -1,0 +1,48 @@
+{
+  "type": "stratos:stratosdim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:amplified",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:lichen_grove",
+          "parameters": {
+            "temperature": 0.13,
+            "humidity": 0,
+            "continentalness": 2,
+            "erosion": 1,
+            "weirdness": 1,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:badlands",
+          "parameters": {
+            "temperature": 0.15,
+            "humidity": 0,
+            "continentalness": -2,
+            "erosion": 0,
+            "weirdness": 1,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:plains",
+          "parameters": {
+            "temperature": 0.14,
+            "humidity": 0,
+            "continentalness": -1,
+            "erosion": 0,
+            "weirdness": 2,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}
