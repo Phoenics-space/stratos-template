@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"stratos.mod.ExampleModClient"
+		],
+		"terrablender": [
+			"stratos.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [
