@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:crimson_forest",
+          "biome": "stratos:lichen_valley",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -19,7 +19,7 @@
           }
         },
         {
-          "biome": "minecraft:plains",
+          "biome": "stratos:lichen_valley",
           "parameters": {
             "temperature": 0.15,
             "humidity": 0,
@@ -31,7 +31,7 @@
           }
         },
         {
-          "biome": "minecraft:birch_forest",
+          "biome": "stratos:lichen_valley",
           "parameters": {
             "temperature": 0.25,
             "humidity": 0.15,
@@ -43,7 +43,7 @@
           }
         },
         {
-          "biome": "minecraft:ocean",
+          "biome": "stratos:lichen_valley",
           "parameters": {
             "temperature": 0.15,
             "humidity": 0.1,

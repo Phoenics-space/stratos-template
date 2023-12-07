@@ -25,6 +25,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.COBBLED_STRATOS_STONE);
 
+                        entries.add(ModBlocks.STRATOS_STONE_WALL);
+
                         entries.add(ModBlocks.FRAME);
 
                         entries.add(ModBlocks.FRAME_FILLED);
@@ -35,15 +37,21 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.AIR_MAHOE_LOG);
 
-                        entries.add(ModBlocks.AIR_MAHOE_PLANKS);
-
                         entries.add(ModBlocks.AIR_MAHOE_WOOD);
 
                         entries.add(ModBlocks.STRIPPED_AIR_MAHOE_LOG);
 
                         entries.add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
 
-                        entries.add(ModBlocks.AIR_MAHOE_BUTTON);
+                        entries.add(ModBlocks.AIR_MAHOE_PLANKS);
+
+                        entries.add(ModBlocks.AIR_MAHOE_STAIRS);
+
+                        entries.add(ModBlocks.AIR_MAHOE_SLAB);
+
+                        entries.add(ModBlocks.AIR_MAHOE_FENCE);
+
+                        entries.add(ModBlocks.AIR_MAHOE_FENCE_GATE);
 
                         entries.add(ModBlocks.AIR_MAHOE_DOOR);
 
@@ -51,15 +59,13 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.AIR_MAHOE_PRESSURE_PLATE);
 
-                        entries.add(ModBlocks.AIR_MAHOE_FENCE);
+                        entries.add(ModBlocks.AIR_MAHOE_BUTTON);
 
-                        entries.add(ModBlocks.AIR_MAHOE_FENCE_GATE);
 
-                        entries.add(ModBlocks.AIR_MAHOE_SLAB);
 
-                        entries.add(ModBlocks.AIR_MAHOE_STAIRS);
 
-                        entries.add(ModBlocks.STRATOS_STONE_WALL);
+
+                        entries.add(ModBlocks.AIR_MAHOE_SAPLING);
 
                         entries.add(ModBlocks.LICHEN_GROWTH);
 
@@ -67,7 +73,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.AIR_SHROOM);
 
-                        entries.add(ModBlocks.AIR_KELP);
+                        entries.add(ModItems.AIR_KELP);
 
                         entries.add(ModBlocks.SHROOM_MYOZYT);
 

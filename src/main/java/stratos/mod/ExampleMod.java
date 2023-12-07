@@ -7,7 +7,9 @@ import stratos.Items.ModItemGroups;
 import stratos.Items.ModItems;
 import stratos.block.ModBlocks;
 import stratos.particle.ModParticles;
-import stratos.world.dimension.portal.StratosPortals;
+import stratos.util.ModRegistries;
+import stratos.world.gen.ModWorldGeneration;
+import stratos.world.tree.ModFoliagePlacerTypes;
 
 public class ExampleMod implements ModInitializer {
 
@@ -20,8 +22,12 @@ public class ExampleMod implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
+        ModRegistries.registerModRegistries();
+
         ModParticles.registerParticles();
 
-        StratosPortals.registerStratosPortals();
+        //ModTrunkPlacerTypes.register();
+        ModFoliagePlacerTypes.register();
+        ModWorldGeneration.generateModWorldGeneration();
         }
     }

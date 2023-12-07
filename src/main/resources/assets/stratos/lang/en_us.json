@@ -1,5 +1,6 @@
 {
   "item.stratos.ruby": "Ruby",
+  "item.stratos.air_kelp": "Air Kelp",
 
   "block.stratos.cobbled_stratos_stone": "Cobbled Stratostone",
   "block.stratos.frame": "stratos Frame",
@@ -13,7 +14,12 @@
   "block.stratos.stripped_air_mahoe_log": "Stripped Airmahoe Log",
   "block.stratos.stripped_air_mahoe_wood": "Stripped Airmahoe Wood",
   "block.stratos.air_mahoe_planks": "Airmahoe Planks",
-  "block.stratos.air_mahoe_leaves": "Airmahoe Leaves",
+  "block.stratos.air_mahoe_lichen": "Airmahoe Leaves",
+  "block.stratos.shroom_myozyt": "Shroom Myozyt",
+
+  "block.stratos.air_shroom": "Air Shroom",
+  "block.stratos.lichen_grass": "Lichen Grass",
+  "block.stratos.air_mahoe_sapling": "Air Mahoe Sapling",
 
   "block.stratos.air_mahoe_stairs": "Airmahoe Stairs",
   "block.stratos.air_mahoe_slab": "Airmahoe Slab",

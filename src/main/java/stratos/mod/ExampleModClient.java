@@ -23,6 +23,8 @@ public class ExampleModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AIR_MAHOE_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AIR_MAHOE_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AIR_KELP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AIR_KELP_PLANT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AIR_MAHOE_SAPLING, RenderLayer.getCutout());
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.AIR_SHROOM_PARTICLE, AirShroomParticle.Factory::new);
     }
