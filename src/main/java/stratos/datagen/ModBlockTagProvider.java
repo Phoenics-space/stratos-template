@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.Lichen_GROWTH)
                 .add(ModBlocks.COBBLED_STRATOS_STONE)
                 .add(ModBlocks.STRATOS_STONE)
                 .add(ModBlocks.FRAME)
