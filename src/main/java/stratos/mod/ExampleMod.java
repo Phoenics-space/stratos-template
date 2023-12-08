@@ -1,33 +1,36 @@
 package stratos.mod;
 
-import net.fabricmc.api.ModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import stratos.Items.ModItemGroups;
-import stratos.Items.ModItems;
-import stratos.block.ModBlocks;
-import stratos.particle.ModParticles;
-import stratos.util.ModRegistries;
-import stratos.world.gen.ModWorldGeneration;
-import stratos.world.tree.ModFoliagePlacerTypes;
+import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
+import stratos.datagen.*;
+import stratos.world.ModConfiguredFeatures;
+import stratos.world.ModPlacedFeatures;
+import stratos.world.biome.ModBiomes;
+import stratos.world.dimension.ModDimensions;
 
-public class ExampleMod implements ModInitializer {
 
-    public static final String MOD_ID = "stratos";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+public class StratosDataGenerator implements DataGeneratorEntrypoint {
+    @Override
+    public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+        FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+
+        pack.addProvider(ModBlockTagProvider::new);
+        pack.addProvider(ModItemTagProvider::new);
+        pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModModelProvider::new);
+        pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModWorldGenerator::new);
+    }
 
     @Override
-    public void onInitialize() {
-        ModItemGroups.registerItemGroups();
-        ModItems.registerModItems();
-        ModBlocks.registerModBlocks();
+    public void buildRegistry(RegistryBuilder registryBuilder) {
 
-        ModRegistries.registerModRegistries();
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 
-        ModParticles.registerParticles();
-
-        //ModTrunkPlacerTypes.register();
-        ModFoliagePlacerTypes.register();
-        ModWorldGeneration.generateModWorldGeneration();
-        }
+        registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
+        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
     }
+}
