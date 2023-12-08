@@ -5,7 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import stratos.datagen.*;
-import stratos.world.ModDimensions;
+import stratos.world.ModConfiguredFeatures;
+import stratos.world.ModPlacedFeatures;
+import stratos.world.biome.ModBiomes;
+import stratos.world.dimension.ModDimensions;
 
 
 public class StratosDataGenerator implements DataGeneratorEntrypoint {

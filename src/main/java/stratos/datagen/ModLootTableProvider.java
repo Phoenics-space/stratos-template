@@ -26,7 +26,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BLOCK);
         addDrop(ModBlocks.COBBLED_STRATOS_STONE);
         addDrop(ModBlocks.STRATOS_STONE, drops(ModBlocks.COBBLED_STRATOS_STONE));
-        addDrop(ModBlocks.RUBY_ORE, drops(ModItems.RUBY));
+
+        addDrop(ModBlocks.RUBY_ORE, oreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY));
 
 
 
@@ -51,8 +52,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LICHEN_GROWTH, drops(ModBlocks.COBBLED_STRATOS_STONE));
 
         addDrop(ModBlocks.LICHEN_GRASS);
+        addDrop(ModBlocks.AIR_KELP);
 
-        addDrop(ModBlocks.AIR_MAHOE_LICHEN, leavesDrops(ModBlocks.AIR_MAHOE_LICHEN, ModBlocks.AIR_MAHOE_LICHEN, 0.0025f)); // TODO
+        addDrop(ModBlocks.AIR_MAHOE_LICHEN, leavesDrops(ModBlocks.AIR_MAHOE_LICHEN, ModBlocks.AIR_MAHOE_SAPLING, 0.025f)); // TODO
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

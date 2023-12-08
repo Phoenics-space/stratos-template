@@ -1,0 +1,16 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/shroom_myozyt",
+        "shroom_myozyt": "block/shroom_myozyt"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0.1 ],
+            "to": [ 16, 16, 0.1 ],
+            "faces": {
+                "north": { "uv": [ 16, 0, 0, 16 ], "texture": "#shroom_myozyt" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#shroom_myozyt" }
+            }
+        }
+    ]
+}
