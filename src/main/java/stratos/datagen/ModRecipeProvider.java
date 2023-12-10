@@ -50,6 +50,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('|', Items.STICK)
                 .criterion(hasItem(ModBlocks.COBBLED_STRATOS_STONE), conditionsFromItem(ModBlocks.COBBLED_STRATOS_STONE))
                 .offerTo(exporter, new Identifier(getItemPath(Items.STONE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_AXE)
+                .pattern("## ")
+                .pattern("#| ")
+                .pattern(" | ")
+                .input('#', ModBlocks.STRATOS_STONE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModBlocks.COBBLED_STRATOS_STONE), conditionsFromItem(ModBlocks.COBBLED_STRATOS_STONE))
+                .offerTo(exporter, new Identifier(getItemPath(Items.STONE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SWORD)
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" | ")
+                .input('#', ModBlocks.STRATOS_STONE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModBlocks.COBBLED_STRATOS_STONE), conditionsFromItem(ModBlocks.COBBLED_STRATOS_STONE))
+                .offerTo(exporter, new Identifier(getItemPath(Items.STONE_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SHOVEL)
+                .pattern(" # ")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('#', ModBlocks.STRATOS_STONE)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModBlocks.COBBLED_STRATOS_STONE), conditionsFromItem(ModBlocks.COBBLED_STRATOS_STONE))
+                .offerTo(exporter, new Identifier(getItemPath(Items.STONE_SHOVEL)));
     }
 }
 

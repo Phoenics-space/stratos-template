@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "stratos:block/stratos_stone",
+    "east": "stratos:block/lichen_growth_side",
+    "north": "stratos:block/lichen_growth_side",
+    "particle": "stratos:block/lichen_growth_side",
+    "south": "stratos:block/lichen_growth_side",
+    "up": "stratos:block/lichen_growth_top",
+    "west": "stratos:block/lichen_growth_side"
+  }
+}
