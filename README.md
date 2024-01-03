@@ -1,6 +1,6 @@
 # Stratos Mod
 
-## A not yet finnished Minecraft Mod
+## A not yet finished Minecraft Mod
 
 
 # Pictures
