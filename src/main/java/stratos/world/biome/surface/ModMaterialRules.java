@@ -10,36 +10,14 @@ import stratos.world.biome.ModBiomes;
 
 public class ModMaterialRules {
 
-
-    private static final MaterialRules.MaterialRule AIR = makeStateRule(Blocks.AIR);
-    private static final MaterialRules.MaterialRule BEDROCK = makeStateRule(Blocks.BEDROCK);
-    private static final MaterialRules.MaterialRule LIGHT_BLUE_TERRACOTTA = makeStateRule(Blocks.LIGHT_BLUE_TERRACOTTA);
-    private static final MaterialRules.MaterialRule CYAN_TERRACOTTA = makeStateRule(Blocks.CYAN_TERRACOTTA);
-    private static final MaterialRules.MaterialRule LIGHT_GRAY_TERRACOTTA = makeStateRule(Blocks.LIGHT_GRAY_TERRACOTTA);
-    private static final MaterialRules.MaterialRule TERRACOTTA = makeStateRule(Blocks.TERRACOTTA);
-    private static final MaterialRules.MaterialRule STONE = makeStateRule(Blocks.STONE);
-    private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
-    private static final MaterialRules.MaterialRule PODZOL = makeStateRule(Blocks.PODZOL);
-    private static final MaterialRules.MaterialRule COARSE_DIRT = makeStateRule(Blocks.COARSE_DIRT);
-    private static final MaterialRules.MaterialRule GRAVEL = makeStateRule(Blocks.GRAVEL);
-    private static final MaterialRules.MaterialRule SAND = makeStateRule(Blocks.SAND);
-    private static final MaterialRules.MaterialRule SANDSTONE = makeStateRule(Blocks.SANDSTONE);
-    private static final MaterialRules.MaterialRule SNOW_BLOCK = makeStateRule(Blocks.SNOW_BLOCK);
-    private static final MaterialRules.MaterialRule POWDER_SNOW = makeStateRule(Blocks.POWDER_SNOW);
-    private static final MaterialRules.MaterialRule WATER = makeStateRule(Blocks.WATER);
-    private static final MaterialRules.MaterialRule LAVA = makeStateRule(Blocks.LAVA);
-    private static final MaterialRules.MaterialRule MAGMA = makeStateRule(Blocks.MAGMA_BLOCK);
     private static final MaterialRules.MaterialRule OBSIDIAN = makeStateRule(Blocks.OBSIDIAN);
-    private static final MaterialRules.MaterialRule TUFF = makeStateRule(Blocks.TUFF);
     private static final MaterialRules.MaterialRule GLOWSTONE = makeStateRule(Blocks.GLOWSTONE);
-
-
     //Stratos
     public static final MaterialRules.MaterialRule LICHEN_GROWTH = makeStateRule(ModBlocks.LICHEN_GROWTH);
     public static final MaterialRules.MaterialRule STRATOS_STONE = makeStateRule(ModBlocks.STRATOS_STONE);
 
 
-    public static MaterialRules.MaterialRule makeRules() {
+    public static MaterialRules.MaterialRule makeLichenValleyRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
 
         MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, LICHEN_GROWTH), STRATOS_STONE);
@@ -57,6 +35,26 @@ public class ModMaterialRules {
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)
         );
     }
+    public static MaterialRules.MaterialRule makeTestBiomeRules() {
+        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
+
+        MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GLOWSTONE), STRATOS_STONE);
+
+        return MaterialRules.sequence(
+                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GLOWSTONE)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, STRATOS_STONE)),
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH, OBSIDIAN),/*Defines the material above the Ceiling*/
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30, OBSIDIAN),
+                MaterialRules.condition(MaterialRules.aboveYWithStoneDepth(YOffset.BOTTOM, 2), OBSIDIAN),
+
+                // Default to a grass and dirt surface
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)
+        );
+    }
+
+
+
     private static MaterialRules.MaterialRule makeStateRule(Block block) {
         return MaterialRules.block(block.getDefaultState());
     }

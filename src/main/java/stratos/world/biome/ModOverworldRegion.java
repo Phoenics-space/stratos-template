@@ -22,6 +22,7 @@ public class ModOverworldRegion extends Region {
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube, RegistryKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.SMALL_END_ISLANDS, ModBiomes.LICHEN_VALLEY);
+            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.SMALL_END_ISLANDS, ModBiomes.TEST_BIOME);
         });
     }
 }

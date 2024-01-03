@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "stratos:lichen_valley",
+          "biome": "stratos:test_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
