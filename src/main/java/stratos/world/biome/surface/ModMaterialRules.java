@@ -10,8 +10,6 @@ import stratos.world.biome.ModBiomes;
 
 public class ModMaterialRules {
 
-    private static final MaterialRules.MaterialRule OBSIDIAN = makeStateRule(Blocks.OBSIDIAN);
-    private static final MaterialRules.MaterialRule GLOWSTONE = makeStateRule(Blocks.GLOWSTONE);
     //Stratos
     public static final MaterialRules.MaterialRule LICHEN_GROWTH = makeStateRule(ModBlocks.LICHEN_GROWTH);
     public static final MaterialRules.MaterialRule STRATOS_STONE = makeStateRule(ModBlocks.STRATOS_STONE);
@@ -35,24 +33,6 @@ public class ModMaterialRules {
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)
         );
     }
-    public static MaterialRules.MaterialRule makeTestBiomeRules() {
-        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
-
-        MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GLOWSTONE), STRATOS_STONE);
-
-        return MaterialRules.sequence(
-                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GLOWSTONE)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, STRATOS_STONE)),
-                MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH, OBSIDIAN),/*Defines the material above the Ceiling*/
-                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30, OBSIDIAN),
-                MaterialRules.condition(MaterialRules.aboveYWithStoneDepth(YOffset.BOTTOM, 2), OBSIDIAN),
-
-                // Default to a grass and dirt surface
-                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)
-        );
-    }
-
 
 
     private static MaterialRules.MaterialRule makeStateRule(Block block) {

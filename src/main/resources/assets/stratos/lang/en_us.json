@@ -1,7 +1,7 @@
 {
   "item.stratos.ruby": "Ruby",
   "item.stratos.air_kelp": "Air Kelp",
-
+  "item.stratos.ancient_portal_igniter": "Ancient portal igniter",
   "block.stratos.cobbled_stratos_stone": "Cobbled Stratostone",
   "block.stratos.frame": "stratos Frame",
   "block.stratos.frame_portal": "Stratos Portal Frame",
@@ -16,11 +16,15 @@
   "block.stratos.air_mahoe_planks": "Airmahoe Planks",
   "block.stratos.air_mahoe_lichen": "Airmahoe Leaves",
   "block.stratos.shroom_myozyt": "Shroom Myozyt",
-
+  "block.stratos.shingle_log": "Shingle Log",
+  "block.stratos.shingle_wood": "Shingle Wood",
+  "block.stratos.stripped_shingle_log": "Stripped Shingle Log",
+  "block.stratos.stripped_shingle_wood": "Stripped Shingle Wood",
+  "block.stratos.shingle_planks": "Shingle Planks",
+  "block.stratos.shingle_myozyt": "Shingle Myozyt",
   "block.stratos.air_shroom": "Air Shroom",
   "block.stratos.lichen_grass": "Lichen Grass",
   "block.stratos.air_mahoe_sapling": "Air Mahoe Sapling",
-
   "block.stratos.air_mahoe_stairs": "Airmahoe Stairs",
   "block.stratos.air_mahoe_slab": "Airmahoe Slab",
   "block.stratos.air_mahoe_button": "Airmahoe Button",
@@ -30,9 +34,16 @@
   "block.stratos.stratos_stone_wall": "Stratostone Wall",
   "block.stratos.air_mahoe_door": "Airmahoe Door",
   "block.stratos.air_mahoe_trapdoor": "Airmahoe Trapdoor",
-
+  "block.stratos.shingle_stairs": "Shingle Stairs",
+  "block.stratos.shingle_slab": "Shingle Slab",
+  "block.stratos.shingle_button": "Shingle Button",
+  "block.stratos.shingle_pressure_plate": "Shingle Pressure Plate",
+  "block.stratos.shingle_fence": "Shingle Fence",
+  "block.stratos.shingle_fence_gate": "Shingle Fence Gate",
+  "block.stratos.shingle_door": "Shingle Door",
+  "block.stratos.shingle_trapdoor": "Shingle Trapdoor",
   "block.stratos.lichen_growth": "Airlichen Growth",
-
+  "block.stratos.sky_sediment": "Sky Sediment",
+  "block.stratos.sky_sediment_bricks": "Sky Sediment Bricks",
   "itemgroup.ruby": "Ruby Stratos Group"
-
 }

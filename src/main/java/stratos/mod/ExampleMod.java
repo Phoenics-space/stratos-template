@@ -3,8 +3,8 @@ package stratos.mod;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import stratos.Items.ModItemGroups;
-import stratos.Items.ModItems;
+import stratos.item.ModItemGroup;
+import stratos.item.ModItems;
 import stratos.block.ModBlocks;
 import stratos.particle.ModParticles;
 import stratos.util.ModRegistries;
@@ -19,7 +19,7 @@ public class ExampleMod
     @Override
     public void onInitialize() {
 
-        ModItemGroups.registerItemGroups();
+        ModItemGroup.registerModItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 

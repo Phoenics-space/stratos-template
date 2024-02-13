@@ -14,7 +14,7 @@ public class AirShroomBlock extends PlantBlock {
 
     protected static final VoxelShape SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 13.0, 14.0);
 
-    public AirShroomBlock(AbstractBlock.Settings settings) {
+    public AirShroomBlock(Settings settings) {
         super(settings);
     }
 
