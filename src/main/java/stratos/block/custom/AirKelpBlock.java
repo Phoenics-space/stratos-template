@@ -1,6 +1,9 @@
 package stratos.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractPlantStemBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.VineLogic;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
@@ -9,7 +12,7 @@ import stratos.block.ModBlocks;
 public class AirKelpBlock extends AbstractPlantStemBlock {
     public static final VoxelShape SHAPE = Block.createCuboidShape(4.0, 0.0, 4.0, 12.0, 15.0, 12.0);
 
-    public AirKelpBlock(AbstractBlock.Settings settings) {
+    public AirKelpBlock(Settings settings) {
         super(settings, Direction.UP, SHAPE, false, 0.4);
     }
 

@@ -23,11 +23,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRATOS_STONE)
                 .add(ModBlocks.FRAME)
                 .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.SKY_SEDIMENT)
                 .add(ModBlocks.RUBY_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK,
-                     ModBlocks.RUBY_ORE);
+                        ModBlocks.RUBY_ORE);
 
 
 
@@ -38,7 +39,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AIR_MAHOE_LOG)
                 .add(ModBlocks.AIR_MAHOE_WOOD)
                 .add(ModBlocks.STRIPPED_AIR_MAHOE_LOG)
-                .add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD);
+                .add(ModBlocks.STRIPPED_AIR_MAHOE_WOOD)
+                //shingle logs and woods
+                .add(ModBlocks.SHINGLE_LOG)
+                .add(ModBlocks.SHINGLE_WOOD)
+                .add(ModBlocks.STRIPPED_SHINGLE_LOG)
+                .add(ModBlocks.STRIPPED_SHINGLE_WOOD);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.AIR_MAHOE_FENCE);
@@ -46,6 +52,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AIR_MAHOE_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.STRATOS_STONE_WALL);
+        //shingle fences and gates
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.SHINGLE_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SHINGLE_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.LICHEN_GROWTH);

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "stratos:air_mahoe_fence"
+    "stratos:air_mahoe_fence",
+    "stratos:shingle_fence"
   ]
 }

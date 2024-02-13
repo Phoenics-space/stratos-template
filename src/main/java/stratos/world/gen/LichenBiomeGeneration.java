@@ -11,6 +11,7 @@ public class LichenBiomeGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LICHEN_VALLEY),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AIR_SHROOM_PLACED_KEY);
     }
+
     public static void generateLichenGrass() {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LICHEN_VALLEY),
@@ -20,11 +21,13 @@ public class LichenBiomeGeneration {
     public static void generateTrees() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LICHEN_VALLEY),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AIR_MAHOE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LICHEN_VALLEY),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHINGLE_PLACED_KEY);
     }
+
     public static void generateAirKelp() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LICHEN_VALLEY),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AIR_KELP_PLACED_KEY);
     }
-
-
 }

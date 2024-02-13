@@ -1,6 +1,8 @@
 package stratos.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Fertilizable;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -18,7 +20,7 @@ import stratos.world.ModConfiguredFeatures;
 
 public class LichenGrothBlock extends Block
         implements Fertilizable {
-    public LichenGrothBlock(AbstractBlock.Settings settings) {
+    public LichenGrothBlock(Settings settings) {
         super(settings);
     }
 
@@ -60,6 +62,6 @@ public class LichenGrothBlock extends Block
     }
 
     private void generate(Registry<ConfiguredFeature<?, ?>> registry, RegistryKey<ConfiguredFeature<?, ?>> key, ServerWorld world, ChunkGenerator chunkGenerator, Random random, BlockPos pos) {
-        registry.getEntry(key).ifPresent(entry -> ((ConfiguredFeature)entry.value()).generate(world, chunkGenerator, random, pos));
+        registry.getEntry(key).ifPresent(entry -> entry.value().generate(world, chunkGenerator, random, pos));
     }
 }

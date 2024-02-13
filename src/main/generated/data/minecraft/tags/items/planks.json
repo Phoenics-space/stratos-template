@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "stratos:air_mahoe_planks"
+    "stratos:air_mahoe_planks",
+    "stratos:shingle_planks"
   ]
 }

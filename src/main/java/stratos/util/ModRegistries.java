@@ -4,9 +4,8 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import stratos.Items.ModItems;
+import stratos.item.ModItems;
 import stratos.block.ModBlocks;
 import stratos.mod.ExampleMod;
 
@@ -41,9 +40,9 @@ public class ModRegistries {
     private static void registerPortal() {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(Blocks.REINFORCED_DEEPSLATE)
-                .lightWithItem(ModItems.RUBY)
+                .lightWithItem(ModItems.ANCIENT_PORTAL_IGNITER)
                 .destDimID(new Identifier(ExampleMod.MOD_ID,"stratosdim"))
-                .tintColor(0xbe, 0x01, 0x3c)
+                .tintColor(0x7d, 0x93, 0xac)
                 .registerPortal();
     }
 }

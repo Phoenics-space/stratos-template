@@ -15,6 +15,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> AIR_MAHOE_PLACED_KEY = registerKey("air_mahoe_placed");
+    public static final RegistryKey<PlacedFeature> SHINGLE_PLACED_KEY = registerKey("shingle_placed");
     public static final RegistryKey<PlacedFeature> AIR_SHROOM_PLACED_KEY = registerKey("air_shroom_placed");
     public static final RegistryKey<PlacedFeature> LICHEN_GRASS_PLACED_KEY = registerKey("lichen_grass_placed");
     public static final RegistryKey<PlacedFeature> AIR_KELP_PLACED_KEY = registerKey("air_kelp_placed");
@@ -27,6 +28,10 @@ public class ModPlacedFeatures {
         register(context, AIR_MAHOE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.AIR_MAHOE_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(6, 0.5f, 2), ModBlocks.AIR_MAHOE_SAPLING));
+
+        register(context, SHINGLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SHINGLE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(6, 0.5f, 2), ModBlocks.SHINGLE_SAPLING));
 
         register(context, AIR_SHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.AIR_SHROOM_KEY),
                 RarityFilterPlacementModifier.of(80), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());

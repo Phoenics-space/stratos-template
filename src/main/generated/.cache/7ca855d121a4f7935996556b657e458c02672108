@@ -1,8 +1,8 @@
-// 1.20.2	2023-12-18T23:01:52.1319259	Stratos/Tags for minecraft:block
-eabac887510d1a917a4884a7caa86aab9fbf166c data\minecraft\tags\blocks\logs_that_burn.json
-ea8a7fb3e0e7e06c2248da4dd11af035ea8000c8 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.2	2024-02-13T15:38:07.1520805	Stratos/Tags for minecraft:block
+28257e4d0924e440eca13d6e7b0eeb74ab8cb5b7 data\minecraft\tags\blocks\logs_that_burn.json
+9020b43d47f48c82ff74fc1780d22b9a187b045f data\minecraft\tags\blocks\mineable\pickaxe.json
 ece305833b98d414ff9820a024dc158172f93241 data\minecraft\tags\blocks\needs_iron_tool.json
 560d7d64725f46ecae74661ed3e5d0d6029525a1 data\minecraft\tags\blocks\walls.json
-621cb4a8dd5530001db2775e2843edfb64ebb661 data\minecraft\tags\blocks\fence_gates.json
 e3e8a0ae873452e214767c8e0c78ed2a31b90ea7 data\minecraft\tags\blocks\dirt.json
-15e239e0dddb9d95186d9d7570f54cfa7f1b6c1a data\minecraft\tags\blocks\fences.json
+76468455166d2d4fc106346056db5a24d4c392ae data\minecraft\tags\blocks\fence_gates.json
+591ef3926f127d3473c1bc51fa217ee5dabb5f98 data\minecraft\tags\blocks\fences.json

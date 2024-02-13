@@ -20,6 +20,7 @@ import stratos.world.tree.custom.AirMahoeFoliagePlacer;
 public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> AIR_MAHOE_KEY = registerKey("air_mahoe");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SHINGLE_KEY = registerKey("shingle");
     public static final RegistryKey<ConfiguredFeature<?, ?>> AIR_SHROOM_KEY = registerKey("air_shroom");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LICHEN_GRASS_KEY = registerKey("lichen_grass");
     public static final RegistryKey<ConfiguredFeature<?, ?>> AIR_KELP_KEY = registerKey("air_kelp");
@@ -34,12 +35,27 @@ public class ModConfiguredFeatures {
                 new AirMahoeFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 3),
                 new TwoLayersFeatureSize(1, 2, 2)).build());
 
+        register(context, SHINGLE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.SHINGLE_LOG),
+                new StraightTrunkPlacer(6, 2, 2),
+                BlockStateProvider.of(ModBlocks.SHINGLE_MYOZYT),
+                new AirMahoeFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 3),
+                new TwoLayersFeatureSize(1, 2, 2)).build());
 
 
-        register(context, AIR_SHROOM_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(10/*tries*/, 2/*xzSpread*/,  2/*ySpread*/, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+
+        //register(context, AIR_SHROOM_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(5/*tries*/, 4/*xzSpread*/,  8/*ySpread*/, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        //        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.AIR_SHROOM)))));
+//
+        //register(context, LICHEN_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(5, 4,  6, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        //        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LICHEN_GRASS)))));
+
+
+
+        register(context, AIR_SHROOM_KEY, Feature.RANDOM_PATCH, new RandomPatchFeatureConfig(5, 4, 8, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.AIR_SHROOM)))));
 
-        register(context, LICHEN_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(10, 4,  3, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, LICHEN_GRASS_KEY, Feature.RANDOM_PATCH, new RandomPatchFeatureConfig(5, 4, 6, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LICHEN_GRASS)))));
 
 
